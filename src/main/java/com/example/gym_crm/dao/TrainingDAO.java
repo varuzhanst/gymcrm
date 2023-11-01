@@ -1,6 +1,7 @@
-package com.example.gymcrm.dao;
+package com.example.gym_crm.dao;
 
-import com.example.gymcrm.model.Training;
+
+import com.example.gym_crm.model.Training;
 
 public interface TrainingDAO {
     void create(Training training);

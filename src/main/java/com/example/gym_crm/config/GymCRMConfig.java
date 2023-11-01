@@ -1,4 +1,4 @@
-package com.example.gymcrm.config;
+package com.example.gym_crm.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -14,10 +14,5 @@ public class GymCRMConfig {
         PropertySourcesPlaceholderConfigurer configurer = new PropertySourcesPlaceholderConfigurer();
         configurer.setLocation(new ClassPathResource("storage.properties"));
         return configurer;
-    }
-
-    @Bean
-    public String sayHello() {
-        return "Hello, World!";
     }
 }

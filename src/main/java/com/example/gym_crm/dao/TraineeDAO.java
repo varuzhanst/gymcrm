@@ -1,6 +1,9 @@
-package com.example.gymcrm.dao;
+package com.example.gym_crm.dao;
 
-import com.example.gymcrm.model.Trainee;
+
+import com.example.gym_crm.model.Trainee;
+
+import java.util.Set;
 
 public interface TraineeDAO {
     void create(Trainee trainee);
@@ -10,4 +13,6 @@ public interface TraineeDAO {
     void get(String username);
 
     void delete(String username);
+
+    Set<String> getAllUsernames();
 }

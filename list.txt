@@ -1,0 +1,17 @@
+Training type
+Cardio
+Strength
+=====================================
+Trainee
+John;Smith;12.12.2001;Yerevan,Armenia
+John;Smith;12.12.2001;Yerevan,Armenia
+John;Smith;12.12.2001;Yerevan,Armenia
+John;Smith;12.12.2001;Yerevan,Armenia
+=====================================
+Trainer
+John;Smith;Cardio
+John;Smith;Cardio
+John;Smith;Strength
+=====================================
+Training
+John.Smith2;John.Smith6;Eliptical workout;01.11.2023;60;Cardio

@@ -1,17 +1,19 @@
-package com.example.gymcrm.dao;
+package com.example.gym_crm.dao;
 
-import com.example.gymcrm.config.Storage;
-import com.example.gymcrm.model.Trainee;
-import lombok.AllArgsConstructor;
+import com.example.gym_crm.config.Storage;
+import com.example.gym_crm.model.Trainee;
 import org.springframework.stereotype.Component;
+
+import java.util.Set;
 
 @Component
 public class TraineeDAOImpl implements TraineeDAO {
+
+    private final Storage storage;
+
     public TraineeDAOImpl(Storage storage) {
         this.storage = storage;
     }
-
-    private final Storage storage;
 
     @Override
     public void create(Trainee trainee) {
@@ -20,7 +22,7 @@ public class TraineeDAOImpl implements TraineeDAO {
 
     @Override
     public void update(Trainee trainee) {
-        storage.getTraineeMap().put(trainee.getUser().getUsername(),trainee);
+        storage.getTraineeMap().put(trainee.getUser().getUsername(), trainee);
     }
 
     @Override
@@ -31,5 +33,10 @@ public class TraineeDAOImpl implements TraineeDAO {
     @Override
     public void delete(String username) {
         storage.getTraineeMap().remove(username);
+    }
+
+    @Override
+    public Set<String> getAllUsernames() {
+        return storage.getTraineeMap().keySet();
     }
 }

@@ -1,4 +1,5 @@
-package com.example.gymcrm.service;
+package com.example.gym_crm.service;
 
 public interface TrainingService {
+
 }

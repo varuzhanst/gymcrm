@@ -1,26 +1,17 @@
-package com.example.gymcrm.model;
+package com.example.gym_crm.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class TrainingType {
     private Long id;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getTypeName() {
-        return typeName;
-    }
-
-    public void setTypeName(String typeName) {
-        this.typeName = typeName;
-    }
-
     private String typeName;
+
+
 }
